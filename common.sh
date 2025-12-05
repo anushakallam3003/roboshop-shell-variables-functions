@@ -1,6 +1,6 @@
 color=\\e[35m
 no_color=\\e[0m
-system_setup() {
+systemd_setup() {
   echo -e ${color}Restart ${component} service${no_color}
     systemctl daemon-reload &>>/tmp/roboshop.log
     systemctl enable ${component} &>>/tmp/roboshop.log
